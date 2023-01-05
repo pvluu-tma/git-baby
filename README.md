@@ -1,3 +1,4 @@
+// Nếu 1 class không define 1 constructor --> JS tự động tạo 1 default constructor
 class Person {
   //default access modifier: public
   firstName?: string;
@@ -18,6 +19,7 @@ class Person {
     console.log("Parent age: ", this.age);
     console.log("Parent phone: ", this.phone);
     console.log("Parent address: ", this.address);
+    console.log("Parent addressaaaaaaaaaaaa: ", this.address);
 
 
     this.firstName = fName;
@@ -38,6 +40,7 @@ class Employee extends Person {
         console.log("Child age: ", this.age);
         console.log("Child phone: ", this.phone);
         console.log("Child address: ", this.address);
+        console.log("Child address: aaaaaaaaaaaaaaaaaaaaaaaa", this.address);
     }
 
     get FirstName() {
@@ -52,6 +55,7 @@ class Employee extends Person {
 let e = new Employee("Jon", "Snow", "219889");
 console.log(e);
 console.log("dfgdfg", e.FirstName);
+console.log("dfgdfgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", e.FirstName);
 e.FirstName = 'lulu';
 console.log('aaaaaaaa', e.FirstName);
 //let p= new Person("Jon","Snow", 10, '03456789');
