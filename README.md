@@ -1,4 +1,3 @@
-// Nếu 1 class không define 1 constructor --> JS tự động tạo 1 default constructor
 class Person {
   //default access modifier: public
   firstName?: string;
