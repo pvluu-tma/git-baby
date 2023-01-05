@@ -44,10 +44,6 @@ class Employee extends Person {
     get FirstName() {
       return this.firstName;
     }
-
-    set FirstName(fName: string) {
-      this.firstName = fName;
-    }
 }
 
 let e = new Employee("Jon", "Snow", "219889");
